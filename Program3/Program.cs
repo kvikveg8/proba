@@ -151,7 +151,7 @@ namespace Program3
                 numbers.Add(Convert.ToInt32(number));
 
             var smallests = new List<int>();
-            while (smallests.Count < 3)
+            while (smallests.Count < 4)
             {
                 // Assume the first number is the smallest
                 var min = numbers[0];
@@ -165,7 +165,7 @@ namespace Program3
                 numbers.Remove(min);
             }
 
-            Console.WriteLine("The 3 smallest numbers are: ");
+            Console.WriteLine("The 4 smallest numbers are: ");
             foreach (var number in smallests)
                 Console.WriteLine(number);
         }
